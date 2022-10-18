@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css.css">
+
+
+</head>
+<body>
+    <h1>
+        Somar
+    </h1>
+   <section>
+        <div class="centro">
+           <label> N1:</label>
+            <input class="n1" type="text" id="n1">
+            <br>
+            <br>
+
+            <label>N2:</label>
+            <input class="n2" type="number" id="n2">
+            <p class="resultado"></p>
+            <button onclick="clicar()" id="resultado">Resultado</button>
+            <input type="button" name="Limpar" value="Limpar" onclick="limpar();">
+            <input type="button" name="Gerar" value="Gerar" onclick="aleatorio();">
+        </div>
+   </section>
+    <script>
+            function clicar(){
+                var n1 = document.querySelector("input.n1").value;
+                var n2 = document.querySelector("input.n2").value;
+                var resultado = parseInt(n1) + parseInt(n2);
+                document.querySelector(".resultado").innerHTML = resultado;
+            }
+
+            function limpar(){
+                document.getElementById('n1').value ="";
+                document.getElementById('n2').value ="";
+            }
+
+            function aleatorio() {
+            return Math.floor(Math.random() * (n1 - n2 + 1) ) + n1;
+}
+    </script>
+</body>
+</html>

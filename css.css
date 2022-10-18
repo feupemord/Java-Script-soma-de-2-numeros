@@ -1,0 +1,18 @@
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ text-align: center;
+}
+h1{
+    background-color: aqua;
+    border-radius: 30px;
+}
+button{
+    background-color: aqua;
+    border: 30px;
+    border-radius: 30px;
+}
+input{
+    background-color: aqua;
+    border: 30px;
+    border-radius: 30px;
+}
